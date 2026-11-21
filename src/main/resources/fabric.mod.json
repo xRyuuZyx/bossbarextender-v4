@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "bossbar_extender",
+  "version": "${version}",
+  "name": "BossBar Extender",
+  "description": "Extends the vanilla BossBar render area while preserving resource-pack rendering. Screen-size sync is provided by the separate UIStudio Screen Sync client mod.",
+  "authors": ["OpenAI"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "id.roleplay.bossbarextender.BossBarExtenderClient"
+    ]
+  },
+  "mixins": [
+    "bossbar_extender.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": ">=1.21.1 <=1.21.11",
+    "java": ">=21",
+    "fabric-api": ">=0.110.0"
+  }
+}
